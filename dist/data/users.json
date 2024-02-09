@@ -1,0 +1,74 @@
+{
+  "data":[
+     {
+        "id":1000,
+        "name":"James Butt",
+        "company":"Benton, John B Jr",
+        "date":"2015-09-13",
+        "role":"Manager",
+        "permissions":"Owner",
+        "phone":92342521,
+        "email":"james@gmail.com"
+     },
+     {
+        "id":1001,
+        "name":"Josephine Darakjy",
+        "company":"Chanay, Jeffrey A Esq",
+        "date":"2019-02-09",
+        "role":"Farmer",
+        "permissions":"Read",
+        "phone":94839521,
+        "email":"josephine@gmail.com"
+     },
+     {
+        "id":1002,
+        "name":"Art Venere",
+        "company":"Chemel, James L Cpa",
+        "date":"2017-05-13",
+        "role":"Farmer",
+        "permissions":"Read",
+        "phone":91234237,
+        "email":"art@gmail.com"
+     },
+     {
+        "id":1003,
+        "name":"Lenna Paprocki",
+        "company":"Feltz Printing Service",
+        "date":"2020-09-15",
+        "role":"Farmer",
+        "permissions":"Read",
+        "phone":17332321,
+        "email":"lenna@gmail.com"
+     },
+     {
+        "id":1004,
+        "name":"Donette Foller",
+        "company":"Printing Dimensions",
+        "date":"2016-05-20",
+        "role":"Farmer",
+        "permissions":"Read",
+        "phone":91929391,
+        "email":"donette@gmail.com"
+     },
+     {
+        "id":1005,
+        "name":"Simona Morasca",
+        "company":"Chapman, Ross E Esq",
+        "date":"2018-02-16",
+        "role":"Operator",
+        "permissions":"Change",
+        "phone":91232427,
+        "email":"simona@gmail.com"
+     },
+     {
+        "id":1006,
+        "name":"Mitsue Tollner",
+        "company":"Morlong Associates",
+        "date":"2018-02-19",
+        "role":"Operator",
+        "permissions":"Change",
+        "phone":91626267,
+        "email":"mitsue@gmail.com"
+     }
+  ]
+}
