@@ -1,0 +1,38 @@
+{
+	"data": [
+		{
+			"name": "Kailan",
+			"waterLevel-min": 200,
+            "waterLevel-max": 300,
+			"pH-min": 5,
+            "pH-max": 6,
+			"temperature-min": 25.4,
+            "temperature-max": 27.4,
+            "ec-min": 2.0,
+            "ec-max": 4.0
+		},
+
+		{
+			"name": "Tomato",
+			"waterLevel-min": 200,
+            "waterLevel-max": 300,
+			"pH-min": 4,
+            "pH-max": 6,
+			"temperature-min": 25.4,
+            "temperature-max": 27.4,
+            "ec-min": 2.0,
+            "ec-max": 4.0
+		},
+		{
+			"name": "Carrot",
+			"waterLevel-min": 200,
+            "waterLevel-max": 300,
+			"pH-min": 5,
+            "pH-max": 7,
+			"temperature-min": 25.4,
+            "temperature-max": 27.4,
+            "ec-min": 2.0,
+            "ec-max": 4.0
+		}
+	]
+}
