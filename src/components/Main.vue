@@ -112,6 +112,8 @@
           </div>
         </transition>
 
+        <experience-info v-if="showInfo" :description="'aaaaa'" @close="closeInfo()"/>
+
         <!-- EDUCATION -->
         <transition name="slide-fade" mode="out-in">
           <div v-if="activeContent == 'education'" class="col-12 pt-0">
@@ -136,6 +138,7 @@
                       backdrop-filter: blur(5px) brightness(85%);
                       border: 1px solid rgba(255, 255, 255, 0.3);
                     "
+                    @click="openInfo()"
                   >
                     <div class="col-12 sm:col-3 flex justify-content-center">
                       <img
@@ -273,8 +276,9 @@
 
 <script>
 // import Serve from "../service/serve";
-import educationData from "../../data/education.json";
+import educationData from "../../public/data/education.json";
 import pdf from "pdfvuer";
+import ExperienceInfo from "./ExperienceInfo.vue";
 
 export default {
   data() {
@@ -283,6 +287,7 @@ export default {
       activeContent: "home",
       isFlashing: false,
       educationData: educationData.data,
+      showInfo: false
     };
   },
   computed: {
@@ -296,6 +301,12 @@ export default {
     },
   },
   methods: {
+    openInfo() {
+      this.showInfo = true;
+    },
+    closeInfo(){
+      this.showInfo = false;
+    },
     is_home() {
       if (this.activeContent === "home") {
         return true;
@@ -356,6 +367,7 @@ export default {
   },
   components: {
     pdf,
+    ExperienceInfo
   },
 };
 </script>
