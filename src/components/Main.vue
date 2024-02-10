@@ -12,10 +12,16 @@
   <!-- Top overview section (Total Racks, Running, Ready for Harvest, Errors) -->
   <div class="grid">
     <div class="col-12 xl:col-2">
-      <div class="card">
-        <img src="layout/images/aris.gif" style="width: 100%" />
+      <div class="card flex">
+        <img id="pfp" src="layout/images/aris.gif" />
+        <ScrollPanel
+          v-if="isMidScreen"
+          class="ml-4 text-500 font-medium text-l"
+          style="width: 100%; height: 250px"
+          >{{ aboutText }}</ScrollPanel
+        >
       </div>
-      <div class="card">
+      <div class="card mb-0">
         <div :class="{ flash: isFlashing }">
           <!-- <img src="layout/images/sms.png" style="width: 100%" /> -->
           <Button
@@ -30,6 +36,13 @@
             :class="contentButtonStyle('education')"
             @click="changeContent('education')"
             label="Education"
+            style="text-align: left"
+          />
+          <Button
+            icon="pi pi-book"
+            :class="contentButtonStyle('projects')"
+            @click="changeContent('projects')"
+            label="Projects"
             style="text-align: left"
           />
           <Button
@@ -50,23 +63,28 @@
       </div>
     </div>
 
-    <div class="col-12 lg:col-12 xl:col-8">
+    <div class="col-12 xl:col-8">
       <transition name="slide-fade">
-        <div v-if="is_home()" class="card mb-0 col-12 pt-0">
-          <div class="flex justify-content-between mb-3">
-            <div>
-              <span class="block text-900 font-medium mb-3 mt-4">About Me</span>
-              <div class="text-500 font-medium text-xl">
-                A young cyber security enthusiast whom graduated from Singapore
-                Polytechnic's Diploma in Infocomm Security and Management
-                course. Interests include programming, hacking and
-                capture-the-flag (CTF) competitions. Aspire to attain a
-                Bachelor's degree in Computer Science while continuing to
-                participate actively in hackathons, CTFs, and volunteering
-                activities. Currently serving National Service and will be
-                matriculating into the National University of Singapore's
-                Computer Science Degree Programme in the year 2025.
+        <div v-if="is_home()">
+          <div v-if="!isMidScreen" class="card mb-0 col-12 pt-0 flex">
+            <div class="flexwrap justify-content-between mb-3">
+              <div>
+                <span class="block text-900 font-medium mb-3 mt-4"
+                  >About Me</span
+                >
+                <div class="text-500 font-medium text-xl">
+                  {{ aboutText }}
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="col-12 px-0">
+            <div
+              class="card"
+              style="width: 100%; text-align: center"
+              @click="startFlashing()"
+            >
+              Select content to load segment
             </div>
           </div>
         </div>
@@ -75,143 +93,22 @@
       <div class="grid mt-0">
         <!-- RESUME -->
         <transition name="slide-fade" mode="out-in">
-          <div v-if="activeContent == 'resume'" class="col-12 pt-0">
-            <div class="card">
-              <div v-if="is_resume()">
-                <div
-                  class="flex flex-wrap justify-content-between align-items-center mb-3"
-                >
-                  <h4 class="sm:m-0 mb-4">Resume</h4>
-                  <span>
-                    <Button
-                      label=""
-                      type="button"
-                      icon="pi pi-chevron-left"
-                      @click="decreasePage()"
-                      class="mr-2 p-button-outlined"
-                    ></Button>
-                    <Button
-                      label=""
-                      type="button"
-                      icon="pi pi-chevron-right"
-                      @click="increasePage()"
-                      class="mr-2 p-button-outlined"
-                    ></Button>
-                  </span>
-                </div>
-
-                <pdf
-                  src="docs/resume.pdf"
-                  :page="pageNumber"
-                  class="overflow-scroll"
-                >
-                  loading content here...
-                </pdf>
-              </div>
-            </div>
-          </div>
+          <Resume v-if="activeContent == 'resume'" />
         </transition>
-
-        <experience-info v-if="showInfo" :description="'aaaaa'" @close="closeInfo()"/>
 
         <!-- EDUCATION -->
         <transition name="slide-fade" mode="out-in">
-          <div v-if="activeContent == 'education'" class="col-12 pt-0">
-            <div class="card" :style="education_background_img">
-              <div v-if="is_education()">
-                <div
-                  class="flex flex-wrap justify-content-between align-items-center mb-3"
-                >
-                  <h4 class="sm:m-0 mb-4" :style="textshadow_color">
-                    Education
-                  </h4>
-                </div>
-                <!-- CONTENT -->
-                <ul class="list-none m-0 p-0">
-                  <li
-                    v-for="data in educationData"
-                    :key="data.institute"
-                    class="card flex flex-wrap col-12"
-                    style="
-                      background-color: rgba(255, 255, 255, 0.2);
-                      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                      backdrop-filter: blur(5px) brightness(85%);
-                      border: 1px solid rgba(255, 255, 255, 0.3);
-                    "
-                    @click="openInfo()"
-                  >
-                    <div class="col-12 sm:col-3 flex justify-content-center">
-                      <img
-                        :src="data.image"
-                        style="height: 175px; width: 175px; object-fit: cover"
-                      />
-                    </div>
-                    <div class="col-12 sm:col-9">
-                      <div
-                        class="col-12 flex flex-wrap"
-                        style="
-                          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                        "
-                      >
-                        <h3 class="col-12 lg:col-7 p-0 mt-1">
-                          {{ data.institute }}
-                        </h3>
-                        <h4 class="col-12 lg:col-5 p-0 mt-1">
-                          {{ data.grade }}
-                        </h4>
-                      </div>
-                      <div class="col-12 flex flex-wrap">
-                        <h5 class="col-12 lg:col-2 p-0 mt-1">Attended:</h5>
-                        <p class="col-12 lg:col-10 p-0 mt-1">
-                          {{ data.attended }}
-                        </p>
-                        <h5 class="col-12 lg:col-1 p-0 mt-1 mb-0">CCA(s):</h5>
-                        <div class="col-12 lg:col-11 p-0 mt-1">
-                          <ul class="list-none">
-                            <li v-for="cca in data.cca" :key="cca">
-                              ➣ {{ cca }}
-                            </li>
-                          </ul>
-                        </div>
+          <Education v-if="activeContent == 'education'" />
+        </transition>
 
-                        <h5 class="col-12 lg:col-2 p-0 mt-3">Awards:</h5>
-                        <div class="col-12 lg:col-10 p-0 mt-3">
-                          <ol>
-                            <li v-for="award in data.awards" :key="award">
-                              {{ award }}
-                            </li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!-- PROJECTS -->
+        <transition name="slide-fade" mode="out-in">
+          <Projects v-if="activeContent == 'projects'" />
         </transition>
 
         <!-- EXPERIENCE -->
         <transition name="slide-fade" mode="out-in">
-          <div v-if="activeContent == 'experience'" class="col-12 pt-0">
-            <div
-              class="card"
-              style="
-                background-color: rgba(0, 0, 0, 0.1);
-                border-top: 1px solid purple;
-              "
-            >
-              <div v-if="is_experience()">
-                <div
-                  class="flex flex-wrap justify-content-between align-items-center mb-3"
-                >
-                  <h4 class="sm:m-0 mb-4">Experience</h4>
-                </div>
-                <!-- CONTENT -->
-                <div class="card col-12"></div>
-              </div>
-            </div>
-          </div>
+          <Experience v-if="activeContent == 'experience'" />
         </transition>
 
         <!-- ACHIEVEMENTS -->
@@ -227,19 +124,6 @@
                 <!-- CONTENT -->
                 <div class="card col-12"></div>
               </div>
-            </div>
-          </div>
-        </transition>
-
-        <!-- NO ACTIVE CONTENT -->
-        <transition name="slide-fade" mode="out-in">
-          <div v-if="activeContent == 'home'" class="col-12">
-            <div
-              class="card"
-              style="width: 100%; text-align: center"
-              @click="startFlashing()"
-            >
-              Select content to load segment
             </div>
           </div>
         </transition>
@@ -276,36 +160,36 @@
 
 <script>
 // import Serve from "../service/serve";
-import educationData from "../../public/data/education.json";
-import pdf from "pdfvuer";
-import ExperienceInfo from "./ExperienceInfo.vue";
+import Resume from "./Resume.vue";
+import Education from "./Education.vue";
+import Projects from "./Projects.vue";
+import Experience from "./Experience.vue";
 
 export default {
   data() {
     return {
-      pageNumber: 1,
       activeContent: "home",
       isFlashing: false,
-      educationData: educationData.data,
-      showInfo: false
+      windowWidth: window.innerWidth,
+      aboutText: `A young cyber security enthusiast whom graduated from
+                  Singapore Polytechnic's Diploma in Infocomm Security and
+                  Management course. Interests include programming, hacking and
+                  capture-the-flag (CTF) competitions. Aspire to attain a
+                  Bachelor's degree in Computer Science while continuing to
+                  participate actively in hackathons, CTFs, and volunteering
+                  activities. Currently serving National Service and will be
+                  matriculating into the National University of Singapore's
+                  Computer Science Degree Programme in the year 2025.`,
     };
   },
   computed: {
-    education_background_img() {
-      return "background-image: url('layout/images/education_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid blue;";
-    },
-    textshadow_color() {
-      return this.$appState.darkTheme
-        ? "text-shadow: 2px 2px black"
-        : "text-shadow: 2px 2px white";
+    isMidScreen() {
+      return this.windowWidth < 1200 ? true : false;
     },
   },
   methods: {
-    openInfo() {
-      this.showInfo = true;
-    },
-    closeInfo(){
-      this.showInfo = false;
+    onResize() {
+      this.windowWidth = window.innerWidth;
     },
     is_home() {
       if (this.activeContent === "home") {
@@ -337,16 +221,6 @@ export default {
       }
       return false;
     },
-    increasePage() {
-      if (this.pageNumber + 1 < 3) {
-        this.pageNumber++;
-      }
-    },
-    decreasePage() {
-      if (this.pageNumber - 1 > 0) {
-        this.pageNumber--;
-      }
-    },
     changeContent(content) {
       this.activeContent = content;
     },
@@ -365,29 +239,58 @@ export default {
       }, 2000); // Adjust the duration as needed
     },
   },
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener("resize", this.onResize);
+    });
+  },
+
+  beforeUnmount() {
+    window.removeEventListener("resize", this.onResize);
+  },
+
   components: {
-    pdf,
-    ExperienceInfo
+    Resume,
+    Education,
+    Projects,
+    Experience,
   },
 };
 </script>
 
 <style scoped>
+#pfp {
+  width: 30%;
+  height: 10%;
+}
+
+@media (min-width: 600px) {
+  #pfp {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #pfp {
+    width: 100%;
+  }
+}
+
 .slide-fade-enter-active {
   transition: all 1.5s ease-in-out;
 }
 
 .slide-fade-leave-active {
-  transition: all 1s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .slide-fade-enter-from {
-  transform: translateY(600px);
+  transform: translateY(200px);
   opacity: 0;
 }
 
 .slide-fade-leave-to {
-  transform: translateY(-200px);
+  transform: translateY(-10px);
   opacity: 0;
 }
 
@@ -417,22 +320,6 @@ export default {
   }
 }
 
-@media (min-width: 768px) {
-  .wrapper * {
-    /* display: inline-block; */
-    height: 3rem;
-    margin-right: 10px;
-  }
-}
-@media (max-width: 767px) {
-  .wrapper * {
-    display: inline-block;
-    width: 100%;
-    height: 3rem;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
 .custom-scrolltop {
   width: 2rem;
   height: 2rem;

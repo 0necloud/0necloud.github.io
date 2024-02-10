@@ -146,7 +146,7 @@ export default {
 <style lang="scss">
 @import "./App.scss";
 body {
-  background-image: url("/images/app.gif"); //https://i.pinimg.com/originals/45/d0/79/45d0790c293e5dba3077f4ad0c4826c6.gif
+  background-image: url("/layout/images/app.gif"); //https://i.pinimg.com/originals/45/d0/79/45d0790c293e5dba3077f4ad0c4826c6.gif
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

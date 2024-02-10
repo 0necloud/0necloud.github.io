@@ -1,14 +1,7 @@
 <template>
   <teleport to="body">
     <div @click="$emit('close')"></div>
-    <dialog
-      open
-      :style="
-        this.$appState.darkTheme
-          ? darkStyle
-          : lightStyle
-      "
-    >
+    <dialog open :style="this.$appState.darkTheme ? darkStyle : lightStyle">
       <!-- Change background color based on theme -->
       <header class="flex justify-content-between">
         <slot name="header">
@@ -18,7 +11,8 @@
         <Button
           type="button"
           icon="pi pi-times"
-          class="p-button-text p-0 m-0 text-white"
+          class="p-button-text p-0 m-0"
+          :class="this.$appState.darkTheme ? 'text-white' : ''"
           @click="$emit('close')"
         />
       </header>
@@ -30,7 +24,6 @@
 </template>
 
 <script>
-
 export default {
   props: {
     images: {
@@ -52,12 +45,12 @@ export default {
   },
   computed: {
     darkStyle() {
-      return 'background-color:rgba(20, 20, 20, 0.8); color:white;'
+      return "background-color:rgb(20, 20, 20); color:white;";
     },
     lightStyle() {
-      return 'background-color:rgba(255,255,255,0.6); color:black;'
-    }
-  }
+      return "background-color:rgb(255,255,255); color:black;";
+    },
+  },
 };
 </script>
 
