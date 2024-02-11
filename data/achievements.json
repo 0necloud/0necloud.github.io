@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "title": "Certified Ethical Hacker",
+            "url": "https://aspen.eccouncil.org/VerifyBadge?type=certification&a=R9j+XEpsvo0/myMcg63hHQ+iMzzFS2agI7XTakWAM1k=",
+            "images": [
+                "images/achievements/CEH.png"
+            ],
+            "date": "2022",
+            "shortDesc": "EC-Council",
+            "longDesc": "The Certified Ethical Hacker (CEH) certification is a professional credential designed for individuals interested in ethical hacking and cybersecurity. Offered by the EC-Council, the CEH certification validates the skills and knowledge needed to identify and address vulnerabilities in computer systems and networks.\n\nScore: 99.2%"
+        },
+        {
+            "title": "eLearnSecurity Junior Penetration Tester",
+            "url": "https://certs.ine.com/35d9e99d-9c19-4e90-8efa-1e13de013d97#gs.4v6v3z",
+            "images": [
+                "images/achievements/eJPT.png"
+            ],
+            "date": "2022",
+            "shortDesc": "INE Security",
+            "longDesc": "INE Security's eJPT is an entry-level certification for aspiring penetration testers, affirming the candidate's proficiency in fundamental knowledge, skills, and abilities necessary for a role as a junior penetration tester. The practical exam encompasses Assessment Methodologies, Host and Network Auditing, Host and Network Penetration Testing, as well as Web Application Penetration Testing.\n\nScore: 85%"
+        },
+        {
+            "title": "Diploma with Merit",
+            "url": "",
+            "images": [
+                "images/achievements/DWM.png"
+            ],
+            "date": "2022",
+            "shortDesc": "Singapore Polytechnic",
+            "longDesc": "The Diploma with Merit is given to students who are in the top 10% of the graduating cohort and display good overall conduct."
+        },
+        {
+            "title": "Director's Honour Roll",
+            "url": "",
+            "images": [
+                "images/achievements/HonourRoll/1.png",
+                "images/achievements/HonourRoll/2.png"
+            ],
+            "date": "2022",
+            "shortDesc": "Singapore Polytechnic",
+            "longDesc": "The Director's Honour Roll award is given to students who are in the top 10% in terms of academic performance, and have exemplary personal record."
+        }
+    ]
+}
