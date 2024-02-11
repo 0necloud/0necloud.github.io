@@ -26,19 +26,7 @@
 <script>
 export default {
   props: {
-    images: {
-      type: Array,
-      required: false,
-    },
     title: {
-      type: String,
-      required: false,
-    },
-    date: {
-      type: String,
-      required: false,
-    },
-    description: {
       type: String,
       required: false,
     },
@@ -51,6 +39,7 @@ export default {
       return "background-color:rgb(255,255,255); color:black;";
     },
   },
+  emits: ["close"]
 };
 </script>
 
@@ -67,7 +56,7 @@ div {
 
 dialog {
   position: fixed;
-  top: 20vh;
+  top: 10vh;
   left: 5%;
   width: 90%;
   z-index: 100;
@@ -77,7 +66,7 @@ dialog {
   padding: 0;
   margin: 0;
   overflow: auto;
-  max-height: 70vh;
+  max-height: 80vh;
 }
 
 header {

@@ -1,10 +1,10 @@
 <template>
   <div class="col-12 pt-0">
-    <div class="card" :style="projects_background_img">
+    <div class="card" :style="achievements_background_img">
       <div
         class="flex flex-wrap justify-content-between align-items-center mb-3"
       >
-        <h4 class="sm:m-0 mb-4" style="text-shadow: 2px 2px black">Projects</h4>
+        <h4 class="sm:m-0 mb-4" style="text-shadow: 2px 2px black">Achievements</h4>
       </div>
       <info-wrapper
         v-if="showInfo"
@@ -18,7 +18,7 @@
       <!-- CONTENT -->
       <ul class="list-none m-0 p-0 grid flex">
         <li
-          v-for="data in projectsData"
+          v-for="data in achievementsData"
           :key="data.institute"
           class="col-12 lg:col-4 m-0 project-listing"
           @click="openInfo(data)"
@@ -58,20 +58,20 @@
 </template>
 
 <script>
-import projectsData from "../../public/data/projects.json";
+import achievementsData from "../../public/data/achievements.json";
 import InfoWrapper from "./InfoWrapper.vue";
 
 export default {
   data() {
     return {
-      projectsData: projectsData.data,
+      achievementsData: achievementsData.data,
       showInfo: false,
       selectedData: {},
     };
   },
   computed: {
-    projects_background_img() {
-      return "background-image: url('layout/images/projects_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid red;";
+    achievements_background_img() {
+      return "background-image: url('layout/images/achievements_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid orange;";
     },
   },
   methods: {

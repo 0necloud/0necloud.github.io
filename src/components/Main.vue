@@ -113,19 +113,7 @@
 
         <!-- ACHIEVEMENTS -->
         <transition name="slide-fade" mode="out-in">
-          <div v-if="activeContent == 'achievements'" class="col-12 pt-0">
-            <div class="card">
-              <div v-if="is_achievements()">
-                <div
-                  class="flex flex-wrap justify-content-between align-items-center mb-3"
-                >
-                  <h4 class="sm:m-0 mb-4">Achievements</h4>
-                </div>
-                <!-- CONTENT -->
-                <div class="card col-12"></div>
-              </div>
-            </div>
-          </div>
+          <Achievements v-if="activeContent == 'achievements'" />
         </transition>
       </div>
     </div>
@@ -164,6 +152,7 @@ import Resume from "./Resume.vue";
 import Education from "./Education.vue";
 import Projects from "./Projects.vue";
 import Experience from "./Experience.vue";
+import Achievements from "./Achievements.vue";
 
 export default {
   data() {
@@ -254,6 +243,7 @@ export default {
     Education,
     Projects,
     Experience,
+    Achievements
   },
 };
 </script>

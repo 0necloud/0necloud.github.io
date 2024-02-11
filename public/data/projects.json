@@ -1,39 +1,61 @@
 {
     "data": [
         {
-            "title": "Project #",
-            "images": ["images/WIP.png"],
-            "date": "??? - ???",
-            "shortDesc": "",
-            "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "title": "Secured Smartfarms Control and Monitoring System",
+            "url": "#",
+            "images": [
+                "images/projects/SSCaMS/1.jpg",
+                "images/projects/SSCaMS/2.jpg",
+                "images/projects/SSCaMS/3.jpg",
+                "images/projects/SSCaMS/4.jpg"
+            ],
+            "date": "2022",
+            "shortDesc": "VueJS, Socket.IO, Redis, IoT",
+            "longDesc": "Countless industries are benefiting from ever improving and everchanging technologies, yet many agricultural processes still have room for improvement. The web application, as part of my polytechnic's year 3 Final Year Project with Leaptron Engineering Pte Ltd, was built for overseeing administration and monitoring of crops is just one of the many possible solutions. The objective of solutions should be self-sustainability by increasing yield and reducing costs and wasted resources through increased efficiency.\n\nThe web application makes use of sockets to receive sensor data from farming racks, where it is processed on the backend and forwarded to the dashboard. On top of monitoring crop growth and conditions, numerous security features have been built into the system, including JSON Web Tokens for authentication, Role-based Access Control, Password Policies, Account Lockout, Logging, and more. It also allows the receiving of notifications via a Telegram bot and through emails.\n\nThrough this project, I have learnt how to do database modelling and implement stored procedures in MariaDB, caching data in Redis, and implement multiple web application security features. During the course of the FYP, we have also learnt to use the SCRUM methodology for project management, which allowed us to meticulously plan out our project timeline and tasks."
         },
         {
-            "title": "Project #",
-            "images": ["images/WIP.png"],
-            "date": "??? - ???",
-            "shortDesc": "",
-            "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "title": "SPAM2 System",
+            "url": "#",
+            "images": [
+                "images/projects/SPAM2/1.jpg",
+                "images/projects/SPAM2/2.jpg",
+                "images/projects/SPAM2/3.jpg"
+            ],
+            "date": "2022",
+            "shortDesc": "Public Key Cryptography",
+            "longDesc": "This is my polytechnic's year 1 assignment for the Applied Cryptography module. It consists of a server and client, where the client sends a request for a menu at the start of the day and sends a CSV file back at the end of the day. The original assignment code sends the data in cleartext, and we were supposed to modify the system to provide Confidentiality, Integrity, and Non-Repudiation of data.\n\nIn order to achieve this, we integrated a Public Key Infrastructure, hashing, and AES encryption. As an addition, we also developed a simple GUI to stand out from the other assignment submissions. "
         },
         {
-            "title": "Project #",
-            "images": ["images/WIP.png"],
-            "date": "??? - ???",
-            "shortDesc": "",
-            "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "title": "Front-End Website",
+            "url": "https://github.com/0necloud/front-end-website",
+            "images": [
+                "images/projects/FED/1.jpg"
+            ],
+            "date": "2020",
+            "shortDesc": "Bootstrap, HTML, CSS, JS",
+            "longDesc": "This was my polytechnic's year 1 assignment for the Front-End Web Development module. It incorporates the use of Bootstrap for mobile responsiveness, and implements simple JavaScript functionalities such as a countdown timer and form selection."
         },
         {
-            "title": "Project #",
-            "images": ["images/WIP.png"],
-            "date": "??? - ???",
-            "shortDesc": "",
-            "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "title": "MikuXSmiku",
+            "url": "https://github.com/0necloud/MikuXSmiku",
+            "images": [
+                "images/projects/MikuXSmiku/1.jpg",
+                "images/projects/MikuXSmiku/2.jpg",
+                "images/projects/MikuXSmiku/3.jpg"
+            ],
+            "date": "2021",
+            "shortDesc": "Tkinter & Turtle",
+            "longDesc": "A fun little project I took on to make a game in Python. Play as the famous Hatsune Miku or Sakura Miku and throw leeks and cherries and each other until one player's HP falls below zero! Fire projectiles at orbs (Battle Ether) to earn points which can be used to activate abilities (Large Projectile/Healing)! All of this while listening to Hatsune Miku's hit songs! \n\nNote: The assets are NOT made by me, and this is meant to be a fun little side project. "
         },
         {
-            "title": "Project #",
-            "images": ["images/WIP.png"],
-            "date": "??? - ???",
-            "shortDesc": "",
-            "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "title": "Python Drawing Programme",
+            "url": "https://github.com/0necloud/draw",
+            "images": [
+                "images/projects/drawapp/1.jpg"
+            ],
+            "date": "2021",
+            "shortDesc": "Tkinter & Turtle",
+            "longDesc": "This was the first project which I have embarked on. This drawing programme uses gamified WASD controls to move the cursor, and offers options to change the pen and canvas colors. It also allows the user to save the current artwork as a local file, although improvements need to be made."
         }
     ]
 }

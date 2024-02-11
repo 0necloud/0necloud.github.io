@@ -2,7 +2,7 @@
 	<div class="layout-footer">
 		<img alt="Logo" :src="footerImage()" height="20" class="mr-2" />
 		Last Updated
-		<span class="font-medium ml-2">9/2/24</span>
+		<span class="font-medium ml-2">11/2/24</span>
 	</div>
 </template>
 
