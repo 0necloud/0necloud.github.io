@@ -1,23 +1,18 @@
 <template>
-	<div class="layout-footer">
-		<img alt="Logo" :src="footerImage()" height="20" class="mr-2" />
-		Last Updated
-		<span class="font-medium ml-2">13/2/24</span>
-	</div>
+  <div class="layout-footer" style="color: white;">
+    <img alt="Logo" src="images/logo-light.svg" height="20" class="mr-2" />
+    Last Updated
+    <span class="font-medium ml-2">13/2/24</span>
+  </div>
 </template>
 
 <script>
-	export default {
-		name: "AppFooter",
-		methods: {
-			footerImage() {
-				return this.$appState.darkTheme ? 'images/logo-light.svg' : 'images/logo-dark.svg';
-			}
-		},
-		computed: {
-			darkTheme() {
-				return this.$appState.darkTheme;
-			}
-		}
-	}
+export default {
+  name: "AppFooter",
+  computed: {
+    darkTheme() {
+      return this.$appState.darkTheme;
+    }
+  },
+};
 </script>
