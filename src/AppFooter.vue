@@ -2,7 +2,7 @@
 	<div class="layout-footer">
 		<img alt="Logo" :src="footerImage()" height="20" class="mr-2" />
 		Last Updated
-		<span class="font-medium ml-2">11/2/24</span>
+		<span class="font-medium ml-2">13/2/24</span>
 	</div>
 </template>
 
@@ -11,7 +11,7 @@
 		name: "AppFooter",
 		methods: {
 			footerImage() {
-				return this.$appState.darkTheme ? 'images/logo-white.svg' : 'images/logo-dark.svg';
+				return this.$appState.darkTheme ? 'images/logo-light.svg' : 'images/logo-dark.svg';
 			}
 		},
 		computed: {

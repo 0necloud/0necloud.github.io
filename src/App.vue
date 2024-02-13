@@ -125,7 +125,7 @@ export default {
     },
     logo() {
       return this.$appState.darkTheme
-        ? "images/logo-white.svg"
+        ? "images/logo-light.svg"
         : "images/logo.svg";
     },
   },

@@ -130,7 +130,7 @@
             >
               <div>
                 <i class="pi pi-linkedin mr-2" style="font-size: 2rem"></i>
-                <a href="https://www.linkedin.com/in/hewyiyun/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/hewyiyun/" class="text-xl">LinkedIn</a>
               </div>
             </li>
           </ul>
