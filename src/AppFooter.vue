@@ -1,6 +1,6 @@
 <template>
   <div class="layout-footer" style="color: white;">
-    <img alt="Logo" src="images/logo-light.svg" height="20" class="mr-2" />
+    <img alt="Logo" src="images/logo-light.svg" height="30" class="mr-2" />
     Last Updated
     <span class="font-medium ml-2">13/2/24</span>
   </div>
