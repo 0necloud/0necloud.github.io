@@ -14,6 +14,29 @@
             "longDesc": "Countless industries are benefiting from ever improving and everchanging technologies, yet many agricultural processes still have room for improvement. The web application, as part of my polytechnic's year 3 Final Year Project with Leaptron Engineering Pte Ltd, was built for overseeing administration and monitoring of crops is just one of the many possible solutions. The objective of solutions should be self-sustainability by increasing yield and reducing costs and wasted resources through increased efficiency.\n\nThe web application makes use of sockets to receive sensor data from farming racks, where it is processed on the backend and forwarded to the dashboard. On top of monitoring crop growth and conditions, numerous security features have been built into the system, including JSON Web Tokens for authentication, Role-based Access Control, Password Policies, Account Lockout, Logging, and more. It also allows the receiving of notifications via a Telegram bot and through emails.\n\nThrough this project, I have learnt how to do database modelling and implement stored procedures in MariaDB, caching data in Redis, and implement multiple web application security features. During the course of the FYP, we have also learnt to use the SCRUM methodology for project management, which allowed us to meticulously plan out our project timeline and tasks."
         },
         {
+            "title": "SP Shirts",
+            "url": "#",
+            "images": [
+                "images/projects/SPShirts/1.jpg",
+                "images/projects/SPShirts/2.jpg",
+                "images/projects/SPShirts/3.jpg"
+            ],
+            "date": "2022",
+            "shortDesc": "Web Application Security",
+            "longDesc": "This is my polytechnic's year 2 assignment for the Secure Coding module. Given an extremely vulnerable web application, my buddy and I have found and categorized the various vulnerabilities with reference to the OWASP Top Ten Web Application Security Risks, after which we have implemented fixes to. Examples of vulnerabilties addressed are:\n\n1. Privilege Escalation\n2. Insecure Direct Object References\n3. SQL Injection\n4. XSS Injection\n5. Lack of encryption (at rest & in transit)\n6. Credential Stuffing.\n\nIn the process of researching on the various vulnerabilties, we have created proof-of-concepts such as using webhooks for XSS attacks and brute-forcing tools. In the implementation of protection against the attacks, we have learnt to implement HTTPS for securing our data in transit, multi-factor authentication, account lockout, and more. All of these were knowledge not covered in school, but done through research and testing."
+        },
+        {
+            "title": "SP Shirts",
+            "url": "#",
+            "images": [
+                "images/projects/SPMovies/1.jpg",
+                "images/projects/SPMovies/2.jpg"
+            ],
+            "date": "2022",
+            "shortDesc": "JWT, MySQL",
+            "longDesc": "This is my polytechnic's year 2 assignment for the Back-End Web Development module. Here, I got to learn how to use MySQL and create databases, develop endpoints, and implement JWT authentication for security."
+        },
+        {
             "title": "SPAM2 System",
             "url": "#",
             "images": [
