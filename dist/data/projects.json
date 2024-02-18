@@ -26,7 +26,7 @@
             "longDesc": "This is my polytechnic's year 2 assignment for the Secure Coding module. Given an extremely vulnerable web application, my buddy and I have found and categorized the various vulnerabilities with reference to the OWASP Top Ten Web Application Security Risks, after which we have implemented fixes to. Examples of vulnerabilties addressed are:\n\n1. Privilege Escalation\n2. Insecure Direct Object References\n3. SQL Injection\n4. XSS Injection\n5. Lack of encryption (at rest & in transit)\n6. Credential Stuffing.\n\nIn the process of researching on the various vulnerabilties, we have created proof-of-concepts such as using webhooks for XSS attacks and brute-forcing tools. In the implementation of protection against the attacks, we have learnt to implement HTTPS for securing our data in transit, multi-factor authentication, account lockout, and more. All of these were knowledge not covered in school, but done through research and testing."
         },
         {
-            "title": "SP Shirts",
+            "title": "SP Movies",
             "url": "#",
             "images": [
                 "images/projects/SPMovies/1.jpg",

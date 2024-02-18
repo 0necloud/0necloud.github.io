@@ -130,7 +130,19 @@
             >
               <div>
                 <i class="pi pi-linkedin mr-2" style="font-size: 2rem"></i>
-                <a href="https://www.linkedin.com/in/hewyiyun/" class="text-xl">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/hewyiyun/" class="text-xl"
+                  >LinkedIn</a
+                >
+              </div>
+            </li>
+            <li
+              class="flex align-items-center py-2 border-bottom-1 surface-border"
+            >
+              <div>
+                <i class="pi pi-github mr-2" style="font-size: 2rem"></i>
+                <a href="https://github.com/0necloud" class="text-xl"
+                  >GitHub</a
+                >
               </div>
             </li>
           </ul>
@@ -243,7 +255,7 @@ export default {
     Education,
     Projects,
     Experience,
-    Achievements
+    Achievements,
   },
 };
 </script>
