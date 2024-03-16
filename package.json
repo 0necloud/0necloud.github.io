@@ -1,9 +1,9 @@
 {
-	"name": "sakai-vue",
+	"name": "0necloud",
 	"version": "3.4.2-SNAPSHOT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/primefaces/sakai-vue.git"
+		"url": "https://github.com/primefaces/0necloud.git"
 	},
 	"license": "MIT",
 	"scripts": {

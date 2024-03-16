@@ -3,7 +3,6 @@
     This page is displayed when the user navigates to a page that does not exists
  -->
 
-<!-- A simple card design from the Sakai Vue template -->
 <template>
     <div class="surface-0 flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
         <div class="grid justify-content-center p-2 lg:p-0" style="min-width:80%">
