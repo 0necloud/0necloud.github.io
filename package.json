@@ -38,6 +38,7 @@
 		"socket.io": "^4.5.1",
 		"socket.io-client": "^4.5.1",
 		"vue": "3.2.9",
+		"vue-pdf": "^4.3.0",
 		"vue-router": "^4.0.0-0",
 		"vue-socket.io": "^3.0.10",
 		"vue-speedometer": "^1.8.0",

@@ -65,7 +65,7 @@
           <div class="grid mt-0">
             <!-- RESUME -->
 
-            <div class="layout-main overflow-scroll">
+            <div class="layout-main" style="width: 100%;">
               <router-view v-slot="{ Component, route }">
                 <transition name="slide-fade" mode="out-in">
                   <component :is="Component" :key="route.fullPath" />
