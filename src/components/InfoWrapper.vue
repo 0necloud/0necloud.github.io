@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="col-12 md:col-6 pl-4">
-          <a :href="url">
+          <a :href="url" :onclick="disableRedirection(url)" target="_blank">
             <h2 class="pt-4 col-6 pl-0" style="width: 100%">
               {{ title }}
             </h2>
@@ -81,6 +81,11 @@ export default {
       type: String,
       required: false,
     },
+  },
+  methods: {
+    disableRedirection(url) {
+      return url === "#" ? "return false;" : "return true;";
+    }
   },
   components: {
     Info,

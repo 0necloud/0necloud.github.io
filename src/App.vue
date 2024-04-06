@@ -15,49 +15,47 @@
             >
           </div>
           <div class="card mb-0">
-            <div :class="{ flash: isFlashing }">
-              <!-- <img src="layout/images/sms.png" style="width: 100%" /> -->
-              <router-link :to="'/resume'">
-                <Button
-                  icon="pi pi-list"
-                  :class="contentButtonStyle('resume')"
-                  label="Resume"
-                  style="text-align: left"
-                />
-              </router-link>
-              <router-link :to="'/education'">
-                <Button
-                  icon="pi pi-book"
-                  :class="contentButtonStyle('education')"
-                  label="Education"
-                  style="text-align: left"
-                />
-              </router-link>
-              <router-link :to="'/projects'">
-                <Button
-                  icon="pi pi-list"
-                  :class="contentButtonStyle('projects')"
-                  label="Projects"
-                  style="text-align: left"
-                />
-              </router-link>
-              <router-link :to="'/experience'">
-                <Button
-                  icon="pi pi-file-o"
-                  :class="contentButtonStyle('experience')"
-                  label="Experience"
-                  style="text-align: left"
-                />
-              </router-link>
-              <router-link :to="'/achievements'">
-                <Button
-                  icon="pi pi-star"
-                  :class="contentButtonStyle('achievements')"
-                  label="Achievements"
-                  style="text-align: left"
-                />
-              </router-link>
-            </div>
+            <!-- <img src="layout/images/sms.png" style="width: 100%" /> -->
+            <router-link :to="'/resume'" style="position:sticky; top: 5px;">
+              <Button
+                icon="pi pi-id-card"
+                :class="contentButtonStyle('resume')"
+                label="Resume"
+                style="text-align: left"
+              />
+            </router-link>
+            <router-link :to="'/education'">
+              <Button
+                icon="pi pi-book"
+                :class="contentButtonStyle('education')"
+                label="Education"
+                style="text-align: left"
+              />
+            </router-link>
+            <router-link :to="'/projects'">
+              <Button
+                icon="pi pi-list"
+                :class="contentButtonStyle('projects')"
+                label="Projects"
+                style="text-align: left"
+              />
+            </router-link>
+            <router-link :to="'/experience'">
+              <Button
+                icon="pi pi-file-o"
+                :class="contentButtonStyle('experience')"
+                label="Experience"
+                style="text-align: left"
+              />
+            </router-link>
+            <router-link :to="'/achievements'">
+              <Button
+                icon="pi pi-star"
+                :class="contentButtonStyle('achievements')"
+                label="Achievements"
+                style="text-align: left"
+              />
+            </router-link>
           </div>
         </div>
 
@@ -65,7 +63,7 @@
           <div class="grid mt-0">
             <!-- RESUME -->
 
-            <div class="layout-main" style="width: 100%;">
+            <div class="layout-main" style="width: 100%">
               <router-view v-slot="{ Component, route }">
                 <transition name="slide-fade" mode="out-in">
                   <component :is="Component" :key="route.fullPath" />
@@ -88,7 +86,8 @@
                   <div>
                     <i class="pi pi-linkedin mr-2" style="font-size: 2rem"></i>
                     <a
-                      href="https://www.linkedin.com/in/hewyiyun/" target="_blank"
+                      href="https://www.linkedin.com/in/hewyiyun/"
+                      target="_blank"
                       class="text-xl"
                       >LinkedIn</a
                     >
@@ -99,7 +98,10 @@
                 >
                   <div>
                     <i class="pi pi-github mr-2" style="font-size: 2rem"></i>
-                    <a href="https://github.com/0necloud" class="text-xl" target="_blank"
+                    <a
+                      href="https://github.com/0necloud"
+                      class="text-xl"
+                      target="_blank"
                       >GitHub</a
                     >
                   </div>
@@ -137,7 +139,6 @@ export default {
   emits: ["change-theme"],
   data() {
     return {
-      isFlashing: false,
       windowWidth: window.innerWidth,
       aboutText: aboutMe.bio,
       layoutMode: "static",

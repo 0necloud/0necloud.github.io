@@ -1,6 +1,17 @@
 {
     "data": [
         {
+            "title": "Portfolio Website",
+            "url": "https://github.com/0necloud/0necloud.github.io",
+            "images": [
+                "images/projects/portfolio/1.png",
+                "images/projects/portfolio/2.png"
+            ],
+            "date": "2024",
+            "shortDesc": "That's this site!",
+            "longDesc": "A site built for my portfolio to practice my front-end web development skills using the VueJS framework. Made this to keep myself busy during my National Service period and to not lose touch of my web development skills.\n\nUses components from PrimeVue and the style classes from the Sakai template. However, the overall layout and design was made by me."
+        },
+        {
             "title": "Secured Smartfarms Control and Monitoring System",
             "url": "#",
             "images": [
