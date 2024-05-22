@@ -1,15 +1,37 @@
 {
     "data": [
         {
+            "title": "Audio Visualiser",
+            "url": "https://0necloud.github.io/audio-visualiser/",
+            "images": [
+                "images/projects/AudioVisualiser/1.png",
+                "images/projects/AudioVisualiser/2.png"
+            ],
+            "date": "2024",
+            "shortDesc": "Vue.js, Three.js, Web Audio API",
+            "longDesc": "A fun yet painful project I undertook to experiment using Three.js. Integrates the Web Audio API to convert audio into visuals.\n\nAllows users to\n1. Stream audio by sharing their tabs / windows / screens (Desktop only and browser-dependent)\n2. Upload an audio file.\n\nThree.js implemented effects include:\n1. Bouncing & Colour-Changing Halo\n2. Audio Bars\n\nhttps://github.com/0necloud/audio-visualiser"
+        },
+        {
+            "title": "RSHub",
+            "url": "https://0necloud.github.io/RSHub/",
+            "images": [
+                "images/projects/RSHub/1.jpg",
+                "images/projects/RSHub/2.jpg"
+            ],
+            "date": "2024",
+            "shortDesc": "Vue.js",
+            "longDesc": "Vue.js application that provides searching of a resource JSON object containing a defined set of keys. Essentially a hub containing urls to different resources.\n\nhttps://github.com/0necloud/RSHub"
+        },
+        {
             "title": "Portfolio Website",
-            "url": "https://github.com/0necloud/0necloud.github.io",
+            "url": "#",
             "images": [
                 "images/projects/portfolio/1.png",
                 "images/projects/portfolio/2.png"
             ],
             "date": "2024",
             "shortDesc": "That's this site!",
-            "longDesc": "A site built for my portfolio to practice my front-end web development skills using the VueJS framework. Made this to keep myself busy during my National Service period and to not lose touch of my web development skills.\n\nUses components from PrimeVue and the style classes from the Sakai template. However, the overall layout and design was made by me."
+            "longDesc": "A site built for my portfolio to practice my front-end web development skills using the Vue.js framework. Made this to keep myself busy during my National Service period and to not lose touch of my web development skills.\n\nUses components from PrimeVue and the style classes from the Sakai template. However, the overall layout and design was made by me.\n\nhttps://github.com/0necloud/0necloud.github.io"
         },
         {
             "title": "Secured Smartfarms Control and Monitoring System",
@@ -21,7 +43,7 @@
                 "images/projects/SSCaMS/4.jpg"
             ],
             "date": "2022",
-            "shortDesc": "VueJS, Socket.IO, Redis, IoT",
+            "shortDesc": "Vue.js, Socket.IO, Redis, IoT",
             "longDesc": "Countless industries are benefiting from ever improving and everchanging technologies, yet many agricultural processes still have room for improvement. The web application, as part of my polytechnic's year 3 Final Year Project with Leaptron Engineering Pte Ltd, was built for overseeing administration and monitoring of crops is just one of the many possible solutions. The objective of solutions should be self-sustainability by increasing yield and reducing costs and wasted resources through increased efficiency.\n\nThe web application makes use of sockets to receive sensor data from farming racks, where it is processed on the backend and forwarded to the dashboard. On top of monitoring crop growth and conditions, numerous security features have been built into the system, including JSON Web Tokens for authentication, Role-based Access Control, Password Policies, Account Lockout, Logging, and more. It also allows the receiving of notifications via a Telegram bot and through emails.\n\nThrough this project, I have learnt how to do database modelling and implement stored procedures in MariaDB, caching data in Redis, and implement multiple web application security features. During the course of the FYP, we have also learnt to use the SCRUM methodology for project management, which allowed us to meticulously plan out our project timeline and tasks."
         },
         {
@@ -61,13 +83,13 @@
         },
         {
             "title": "Front-End Website",
-            "url": "https://github.com/0necloud/front-end-website",
+            "url": "https://0necloud.github.io/front-end-website/",
             "images": [
                 "images/projects/FED/1.jpg"
             ],
             "date": "2020",
             "shortDesc": "Bootstrap, HTML, CSS, JS",
-            "longDesc": "This was my polytechnic's year 1 assignment for the Front-End Web Development module. It incorporates the use of Bootstrap for mobile responsiveness, and implements simple JavaScript functionalities such as a countdown timer and form selection."
+            "longDesc": "This was my polytechnic's year 1 assignment for the Front-End Web Development module. It incorporates the use of Bootstrap for mobile responsiveness, and implements simple JavaScript functionalities such as a countdown timer and form selection.\n\nhttps://github.com/0necloud/front-end-website"
         },
         {
             "title": "MikuXSmiku",

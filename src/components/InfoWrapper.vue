@@ -6,7 +6,7 @@
           class="col-12 md:col-6"
           style="
             border-radius: 25px;
-            background-color: rgba(233, 233, 233, 0.1);
+            background-color: rgba(233, 233, 233, 0.05);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
           "
