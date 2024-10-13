@@ -1,0 +1,53 @@
+.user-role,
+.user-permissions,
+.order-badge {
+    border-radius: var(--border-radius);
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.user-role {
+    &.status-Manager {
+        background: #C8E6C9;
+        color: #256029;
+    }
+
+
+    &.status-Farmer {
+        background: #FEEDAF;
+        color: #8A5340;
+    }
+
+    &.status-Operator {
+        background: #B3E5FC;
+        color: #23547B;
+    }
+}
+
+.user-permissions {
+    border-radius: var(--border-radius);
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+
+    &.status-Owner {
+        background: #C8E6C9;
+        color: #256029;
+    }
+
+    &.status-Read {
+        background: #FEEDAF;
+        color: #8A5340;
+    }
+
+    &.status-Change {
+        background: #B3E5FC;
+        color: #23547B;
+    }
+
+}
