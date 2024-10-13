@@ -1,0 +1,50 @@
+{
+    "data": [
+        {
+            "organisation": "DSO National Laboratories",
+            "image": "images/DSO.png",
+            "date": "Feb 2023 - May 2023",
+            "position": "Technical Support",
+            "tasks": [
+                "Developed Outlook Extension deployed to company staff",
+                "Created a malware analysis pipeline using the public framework, Karton, to streamline artifact analyses"
+            ],
+            "skills": [
+                "VSTO Programming",
+                "Podman / Docker"
+            ]
+        },
+        {
+            "organisation": "DSO National Laboratories",
+            "image": "images/DSO.png",
+            "date": "Sep 2022 - Feb 2023",
+            "position": "Research Intern",
+            "tasks": [
+                "Look into existing Living-Off-The-Land Binaries (LOLBins) and understand how taint-tracking is performed",
+                "Create a Ghidra taint-tracking script using Java",
+                "Research into the possibility of reversing a chosen Operating System's patches by leveraging on flaws in the update process",
+                "Create a proof-of-concept script to alter a chosen Operating System's information"
+            ],
+            "skills": [
+                "Ghidra Scripting",
+                "Reverse Engineering",
+                "Java"
+            ]
+        },
+        {
+            "organisation": "Cyber Youth Singapore",
+            "image": "images/CYS.png",
+            "date": "Nov 2020 - Nov 2022",
+            "position": "Assistant Director, CDD",
+            "tasks": [
+                "Engaged with the community in cyber-related talks",
+                "Helped with the planning of the NEST platform, an educational mobile app aimed at educating and guiding youths in cybersecurity",
+                "Researched into online certifications and courses on cybersecurity"
+            ],
+            "skills": [
+                "Communication",
+                "Teamwork"
+            ]
+        }
+    ]
+}

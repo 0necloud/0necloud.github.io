@@ -1,0 +1,41 @@
+{
+	"data": [
+		{
+			"institute": "National University of Singapore",
+			"image": "images/NUS.jpg",
+			"grade": "...",
+			"attended": "2025-Future (Bachelor's Degree in Computer Science)",
+			"cca": [],
+			"awards": []
+		},
+		{
+			"institute": "Singapore Polytechnic",
+			"image": "images/SP.jpg",
+			"grade": "Cumulative GPA: 3.91",
+			"attended": "2020-2023 (Diploma in Infocomm Security Management (S54)",
+			"cca": [
+				"Singapore Polytechnic Ambassadors (Member)",
+				"Gryphons (Member)"
+			],
+			"awards": [
+				"Diploma with Merit",
+				"Director's Honour Roll (AY21/22)",
+				"Director's Honour Roll (AY20/21)",
+				"DSO Diploma Scholarship"
+			]
+		},
+		{
+			"institute": "Yuan Ching Secondary School",
+			"image": "images/YCSS.jpg",
+			"grade": "L1R4(NETT): 4, L1R5(NETT): 7",
+			"attended": "2016-2019",
+			"cca": [
+				"National Civil Defence Cadet Corps (Unit Drill Instructor)"
+			],
+			"awards": [
+				"YCSS 5 Distinctions Award",
+				"Edusave Scholarship"
+			]
+		}
+	]
+}
