@@ -23,12 +23,12 @@
           <div class="col-12 sm:col-3 flex justify-content-center">
             <img
               :src="data.image"
-              style="height: 175px; width: 175px; object-fit: cover"
+              style="height: 175px; width: 175px; object-fit: cover; padding: 5px;"
             />
           </div>
           <div class="col-12 sm:col-9">
             <div
-              class="col-12 flex flex-wrap"
+              class="col-12 flex flex-wrap ml-2"
               style="border-bottom: 1px solid rgba(255, 255, 255, 0.5)"
             >
               <h3 class="col-12 lg:col-7 p-0 mt-1">
@@ -38,7 +38,7 @@
                 {{ data.position }}
               </h4>
             </div>
-            <div class="col-12 flex flex-wrap">
+            <div class="col-12 flex flex-wrap ml-2">
               <h5 class="col-12 lg:col-2 p-0 mt-1">Period:</h5>
               <p class="col-12 lg:col-10 p-0 mt-1">
                 {{ data.date }}
