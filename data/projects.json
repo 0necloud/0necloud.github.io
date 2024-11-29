@@ -1,17 +1,18 @@
 {
     "data": [
         {
-            "title": "Revived Witch Assets",
-            "url": "https://revivedwitch.netlify.app/",
+            "title": "Game Wiki Site",
+            "url": "https://dungeonslasher.wiki/",
             "images": [
-                "images/projects/rw_assets/1.png",
-                "images/projects/rw_assets/2.png",
-                "images/projects/rw_assets/3.png",
-                "images/projects/rw_assets/4.png"
+                "images/projects/DSInfo/1.png",
+                "images/projects/DSInfo/2.png",
+                "images/projects/DSInfo/3.png",
+                "images/projects/DSInfo/4.png",
+                "images/projects/DSInfo/5.png"
             ],
             "date": "2024",
-            "shortDesc": "Vue.js",
-            "longDesc": "Revived Witch was a mobile gacha game I used to play back in the day. However, the game has ended service in 2023, and is no longer playable.\n\nI have created this site to display some of the game assets sought after by the old playerbase, so as to ensure that fans are able to maintain access to, and enjoy some of the game's assets and relive their memories :)"
+            "shortDesc": "Vue.js, SEO",
+            "longDesc": "DungeonSlasher is a mobile game for which I have created a wiki site from scratch for. Through this project, I have gotten first hand experience with purchasing my own domain, setting DNS records, monitor traffic through the Google Search Console and also learn basic SEO techniques to help my site appear more on Search Engines.\n\nI have also created a similar site for a game which has ended service, and will not be maintaining the site any longer: https://revivedwitch.netlify.app/"
         },
         {
             "title": "Audio Visualiser",
