@@ -32,9 +32,6 @@
             margin-right: .5rem;
         }
 
-        &:focus {
-            @include focused();
-        }
     }
 
     .layout-topbar-button {
@@ -53,10 +50,6 @@
         &:hover {
             color: var(--text-color);
             background-color: var(--surface-hover);
-        }
-
-        &:focus {
-            @include focused();
         }
 
         i {

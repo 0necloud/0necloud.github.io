@@ -23,7 +23,7 @@
           <div class="col-12 sm:col-3 flex justify-content-center">
             <img
               :src="data.image"
-              style="height: 175px; width: 175px; object-fit: cover"
+              style="height: 175px; width: 175px; object-fit: cover; padding: 10px;"
             />
           </div>
           <div class="col-12 sm:col-9">

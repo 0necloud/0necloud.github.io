@@ -1,7 +1,7 @@
 <template>
   <div class="layout-topbar" :style="topbarColor">
-    <router-link to="/" class="layout-topbar-logo">
-      <img alt="Logo" :src="topbarImage" />
+    <router-link to="/" class="layout-topbar-logo" style="width: 100%; height: 100%;">
+      <img alt="Logo" :src="topbarImage" style="max-height: 100%; object-fit: contain;"/>
       <span>0necloud</span>
     </router-link>
 
