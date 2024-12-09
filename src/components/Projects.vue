@@ -24,7 +24,7 @@
           @click="openInfo(data)"
         >
           <div
-            class="card"
+            class="card h-full"
             align="center"
             style="
               /* background-color: rgba(255, 255, 255, 0.2); */
