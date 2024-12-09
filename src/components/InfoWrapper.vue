@@ -4,12 +4,6 @@
       <div class="col-12 mb-3 grid flex pl-4">
         <div
           class="col-12 md:col-6"
-          style="
-            border-radius: 25px;
-            background-color: rgba(233, 233, 233, 0.05);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
-          "
         >
           <div class="flex flex-wrap justify-content-center align-items-center">
             <Carousel
@@ -40,11 +34,10 @@
           </a>
           <h5 class="pl-0">{{ date }}</h5>
           <div
-            class="flex flex-wrap justify-content-center align-items-center p-4"
-            style="border: 1px solid indigo"
+            class="flex flex-wrap justify-content-center align-items-center p-0"
           >
             <ScrollPanel
-              class="ml-4 text-500 font-medium text-l"
+              class="text-500 font-medium text-l"
               style="width: 100%; height: 250px; white-space: pre-line"
             >
               {{ description }}

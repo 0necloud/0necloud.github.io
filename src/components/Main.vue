@@ -1,11 +1,5 @@
-<!-- 
-
-  OVERVIEW
-  Main dashboard page to allow users to skim through the most important information, such as the plant growth and pH values, with a quick glance
-
--->
 <template>
-  <div>
+  <div class="col-12 pt-0">
     <div v-if="!isMidScreen" class="card mb-0 col-12 pt-0 flex">
       <div class="flexwrap justify-content-between mb-3">
         <div>

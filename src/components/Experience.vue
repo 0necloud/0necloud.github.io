@@ -4,7 +4,7 @@
       <div
         class="flex flex-wrap justify-content-between align-items-center mb-3"
       >
-        <h4 class="sm:m-0 mb-4" style="text-shadow: 2px 2px black">Experience</h4>
+        <h4 class="sm:m-0 mb-4">Experience</h4>
       </div>
       <!-- CONTENT -->
       <ul class="list-none m-0 p-0">
@@ -13,7 +13,7 @@
           :key="data.institute"
           class="card flex flex-wrap col-12"
           style="
-            background-color: rgba(255, 255, 255, 0.2);
+            /* background-color: rgba(255, 255, 255, 0.2); */
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px) brightness(85%);
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -80,7 +80,8 @@ export default {
   },
   computed: {
     experience_background_img() {
-      return "background-image: url('layout/images/experience_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid green;";
+      // return "background-image: url('layout/images/experience_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid green;";
+      return "";
     },
   },
   methods: {
@@ -95,7 +96,7 @@ export default {
 </script>
 
 <style scoped>
-div {
+/* div {
   color: white;
-}
+} */
 </style>

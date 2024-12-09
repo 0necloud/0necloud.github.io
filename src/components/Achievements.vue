@@ -4,7 +4,7 @@
       <div
         class="flex flex-wrap justify-content-between align-items-center mb-3"
       >
-        <h4 class="sm:m-0 mb-4" style="text-shadow: 2px 2px black">Achievements</h4>
+        <h4 class="sm:m-0 mb-4">Achievements</h4>
       </div>
       <info-wrapper
         v-if="showInfo"
@@ -20,18 +20,18 @@
         <li
           v-for="data in achievementsData"
           :key="data.institute"
-          class="col-12 lg:col-4 m-0 project-listing"
+          class="col-12 sm:col-6 md:col-4 lg:col-3 m-0 achievement-listing"
           @click="openInfo(data)"
         >
           <div
             class="card"
             align="center"
             style="
-              background-color: rgba(255, 255, 255, 0.2);
+              /* background-color: rgba(255, 255, 255, 0.2); */
               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
               backdrop-filter: blur(5px) brightness(85%);
               border: 1px solid rgba(255, 255, 255, 0.3);
-              text-shadow: 0.5px 0.5px black
+              /* text-shadow: 0.5px 0.5px black */
             "
           >
             <img
@@ -47,7 +47,7 @@
             <h4 class="p-0 mt-1" >
               {{ data.title }}
             </h4>
-            <h5 class="p-0 mt-1 text-blue-100">
+            <h5 class="p-0 mt-1 text-indigo-300">
               {{ data.shortDesc }}
             </h5>
           </div>
@@ -71,7 +71,8 @@ export default {
   },
   computed: {
     achievements_background_img() {
-      return "background-image: url('layout/images/achievements_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid orange;";
+      // return "background-image: url('layout/images/achievements_bg.jpg'); background-size:cover; background-position:center; border-top: 1px solid orange;";
+      return "";
     },
   },
   methods: {
@@ -90,11 +91,11 @@ export default {
 </script>
 
 <style scoped>
-div {
+/* div {
   color: white;
-}
+} */
 
-.project-listing:hover {
+.achievement-listing:hover {
   filter: saturate(70%);
 }
 </style>

@@ -14,8 +14,9 @@
               >{{ aboutText }}</ScrollPanel
             >
           </div>
+
+          <!-- Navbar -->
           <div class="card mb-0">
-            <!-- <img src="layout/images/sms.png" style="width: 100%" /> -->
             <router-link :to="'/resume'" style="position:sticky; top: 5px;">
               <Button
                 icon="pi pi-id-card"
@@ -61,7 +62,7 @@
 
         <div class="col-12 xl:col-8">
           <div class="grid mt-0">
-            <!-- RESUME -->
+            <!-- Content -->
 
             <div class="layout-main" style="width: 100%">
               <router-view v-slot="{ Component, route }">
@@ -227,7 +228,7 @@ export default {
     backgroundOpacity() {
       return this.$appState.darkTheme
         ? "background-color: rgba(18, 18, 18, 0.7);"
-        : "background-color: rgba(239, 243, 248, 0.3);";
+        : "background-color: rgba(239, 243, 248, 0.5  );";
     },
     containerClass() {
       return [
