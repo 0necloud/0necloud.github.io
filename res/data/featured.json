@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "title": "PortfolioV2 Website",
+            "url": "#",
+            "images": [
+                "res/images/projects/PortfolioV2/1.png"
+            ],
+            "date": "2024",
+            "badges": [
+                "Vue.js",
+                "Three.js"
+            ],
+            "description": "This is my second take at creating a portfolio website, where I decided to try out Vue's Composition API for the first time. Unlike my PortfolioV1 site, here I have decided to go for a single-scrollable page and also build it completely from scratch, exploring different ways of organising my file structure and data."
+        },
+        {
+            "title": "Game Wiki Site",
+            "url": "https://dungeonslasher.wiki/",
+            "images": [
+                "res/images/projects/DSInfo/1.png",
+                "res/images/projects/DSInfo/2.png",
+                "res/images/projects/DSInfo/3.png",
+                "res/images/projects/DSInfo/4.png",
+                "res/images/projects/DSInfo/5.png",
+                "res/images/projects/DSInfo/6.png"
+            ],
+            "date": "2024",
+            "badges": [
+                "Vue.js",
+                "SEO"
+            ],
+            "description": "Dungeon Slasher is a mobile game for which I have created a wiki site from scratch for. Through this project, I have gotten first hand experience with purchasing my own domain, setting DNS records, monitor traffic through the Google Search Console and also learn basic SEO techniques to help my site appear more on Search Engines.\n\nI have also created a similar site for a game which has ended service, and will not be maintaining the site any longer: https://revivedwitch.netlify.app/"
+        },
+        {
+            "title": "Audio Visualiser",
+            "url": "https://bavisualiser.netlify.app/",
+            "images": [
+                "res/images/projects/AudioVisualiser/1.png",
+                "res/images/projects/AudioVisualiser/2.png",
+                "res/images/projects/AudioVisualiser/3.png",
+                "res/images/projects/AudioVisualiser/4.png"
+            ],
+            "date": "2024",
+            "badges": [
+                "Vue.js",
+                "Three.js",
+                "Web Audio API"
+            ],
+            "description": "A fun yet painful project I undertook to experiment using Three.js. Integrates the Web Audio API to convert audio into visuals.\n\nAllows users to\n1. Stream audio by sharing their tabs / windows / screens (Desktop only and browser-dependent)\n2. Upload an audio file.\n\nThree.js implemented effects include:\n1. Bouncing & Colour-Changing Halo\n2. Audio Bars\n\nDemo: https://0necloud.github.io/audio-visualiser/\nSource Code: https://github.com/0necloud/audio-visualiser"
+        }
+    ]
+}
