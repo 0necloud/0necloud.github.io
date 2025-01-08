@@ -1,36 +1,23 @@
 <template>
   <div class="col-12 pt-0">
     <div class="card" :style="education_background_img">
-      <div
-        class="flex flex-wrap justify-content-between align-items-center mb-3"
-      >
+      <div class="flex flex-wrap justify-content-between align-items-center mb-3">
         <h4 class="sm:m-0 mb-4">Education</h4>
       </div>
 
       <!-- CONTENT -->
       <ul class="list-none m-0 p-0">
-        <li
-          v-for="data in educationData"
-          :key="data.institute"
-          class="card flex flex-wrap col-12"
-          style="
+        <li v-for="data in educationData" :key="data.institute" class="card flex flex-wrap col-12" style="
             /* background-color: rgba(255, 255, 255, 0.2); */
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px) brightness(85%);
             border: 1px solid rgba(255, 255, 255, 0.3);
-          "
-        >
+          ">
           <div class="col-12 sm:col-3 flex justify-content-center">
-            <img
-              :src="data.image"
-              style="height: 175px; width: 175px; object-fit: cover; padding: 10px;"
-            />
+            <img :src="data.image" style="height: 175px; width: 175px; object-fit: cover; padding: 10px;" />
           </div>
           <div class="col-12 sm:col-9">
-            <div
-              class="col-12 flex flex-wrap"
-              style="border-bottom: 1px solid rgba(255, 255, 255, 0.5)"
-            >
+            <div class="col-12 flex flex-wrap" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5)">
               <h3 class="col-12 lg:col-7 p-0 mt-1">
                 {{ data.institute }}
               </h3>
@@ -43,11 +30,12 @@
               <p class="col-12 lg:col-10 p-0 mt-1">
                 {{ data.attended }}
               </p>
-              <h5 class="col-12 lg:col-1 p-0 mt-1 mb-0">CCA(s):</h5>
-              <div class="col-12 lg:col-11 p-0 mt-1">
-                <ul class="list-none">
-                  <li v-for="cca in data.cca" :key="cca">➣ {{ cca }}</li>
-                </ul>
+              <h5 class="col-12 lg:col-2 p-0 mt-1 mb-0">CCA(s):</h5>
+              <div class="col-12 lg:col-10 p-0 mt-1">
+                <ol class="list-none">
+                  <li v-for="cca in data.cca" :key="cca" style="list-style-type: '➣ ';">{{ cca }}
+                  </li>
+                </ol>
               </div>
 
               <h5 class="col-12 lg:col-2 p-0 mt-3">Awards:</h5>
@@ -67,7 +55,7 @@
 </template>
 
 <script>
-import educationData from "../../public/data/education.json";
+import educationData from "../../public/res/data/education.json";
 
 export default {
   data() {

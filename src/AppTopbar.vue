@@ -25,8 +25,8 @@ export default {
     },
     topbarImage() {
       return this.$appState.darkTheme
-        ? "images/logo-light.svg"
-        : "images/logo-dark.svg";
+        ? "res/images/logo-light.svg"
+        : "res/images/logo-dark.svg";
     },
   },
 };

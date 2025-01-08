@@ -12,14 +12,14 @@
         :url="selectedData.url"
         :date="selectedData.date"
         :images="selectedData.images"
-        :description="selectedData.longDesc"
+        :description="selectedData.description"
         @close="closeInfo()"
       />
       <!-- CONTENT -->
       <ul class="list-none m-0 p-0 grid flex">
         <li
           v-for="data in projectsData"
-          :key="data.institute"
+          :key="data.title"
           class="col-12 sm:col-6 md:col-4 lg:col-3 m-0 project-listing"
           @click="openInfo(data)"
         >
@@ -47,7 +47,7 @@
               {{ data.title }}
             </h4>
             <h5 class="p-0 mt-1 text-indigo-300">
-              {{ data.shortDesc }}
+              {{ data.badges.join(", ") }}
             </h5>
           </div>
         </li>
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import projectsData from "../../public/data/projects.json";
+import projectsData from "../../public/res/data/projects.json";
 import InfoWrapper from "./InfoWrapper.vue";
 
 export default {

@@ -12,14 +12,14 @@
         :url="selectedData.url"
         :date="selectedData.date"
         :images="selectedData.images"
-        :description="selectedData.longDesc"
+        :description="selectedData.description"
         @close="closeInfo()"
       />
       <!-- CONTENT -->
       <ul class="list-none m-0 p-0 grid flex">
         <li
           v-for="data in achievementsData"
-          :key="data.institute"
+          :key="data.title"
           class="col-12 sm:col-6 md:col-4 lg:col-3 m-0 achievement-listing"
           @click="openInfo(data)"
         >
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import achievementsData from "../../public/data/achievements.json";
+import achievementsData from "../../public/res/data/achievements.json";
 import InfoWrapper from "./InfoWrapper.vue";
 
 export default {

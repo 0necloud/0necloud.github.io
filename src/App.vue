@@ -132,7 +132,7 @@
 </template>
 
 <script>
-import aboutMe from "../public/data/aboutme.json";
+import aboutMe from "../public/res/data/aboutme.json";
 import AppTopBar from "./AppTopbar.vue";
 import AppFooter from "./AppFooter.vue";
 

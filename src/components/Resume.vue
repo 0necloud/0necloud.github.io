@@ -23,7 +23,7 @@
         </span>
       </div>
 
-      <pdf src="docs/resume.pdf" :page="pageNumber" class="overflow-hidden">
+      <pdf src="res/docs/resume.pdf" :page="pageNumber" class="overflow-hidden">
         loading content here...
       </pdf>
     </div>

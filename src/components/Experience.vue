@@ -10,7 +10,7 @@
       <ul class="list-none m-0 p-0">
         <li
           v-for="data in experienceData"
-          :key="data.institute"
+          :key="data.organisation + '-' + data.position"
           class="card flex flex-wrap col-12"
           style="
             /* background-color: rgba(255, 255, 255, 0.2); */
@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import experienceData from "../../public/data/experience.json";
+import experienceData from "../../public/res/data/experience.json";
 
 export default {
   data() {
