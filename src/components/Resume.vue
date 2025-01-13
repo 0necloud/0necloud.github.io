@@ -1,29 +1,17 @@
 <template>
   <div class="col-12 pt-0">
     <div class="card">
-      <div
-        class="flex flex-wrap justify-content-between align-items-center mb-3"
-      >
+      <div class="flex flex-wrap justify-content-between align-items-center mb-3">
         <h4 class="sm:m-0 mb-4">Resume</h4>
         <span>
-          <Button
-            label=""
-            type="button"
-            icon="pi pi-chevron-left"
-            @click="decreasePage()"
-            class="mr-2 p-button-outlined"
-          ></Button>
-          <Button
-            label=""
-            type="button"
-            icon="pi pi-chevron-right"
-            @click="increasePage()"
-            class="mr-2 p-button-outlined"
-          ></Button>
+          <Button label="" type="button" icon="pi pi-chevron-left" @click="decreasePage()"
+            class="mr-2 p-button-outlined"></Button>
+          <Button label="" type="button" icon="pi pi-chevron-right" @click="increasePage()"
+            class="mr-2 p-button-outlined"></Button>
         </span>
       </div>
 
-      <pdf src="res/docs/resume.pdf" :page="pageNumber" class="overflow-hidden">
+      <pdf src="res/docs/Resume - Public.pdf" :page="pageNumber" class="overflow-hidden">
         loading content here...
       </pdf>
     </div>

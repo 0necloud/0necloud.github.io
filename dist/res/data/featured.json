@@ -46,7 +46,7 @@
                 "Three.js",
                 "Web Audio API"
             ],
-            "description": "A fun yet painful project I undertook to experiment using Three.js. Integrates the Web Audio API to convert audio into visuals.\n\nAllows users to\n1. Stream audio by sharing their tabs / windows / screens (Desktop only and browser-dependent)\n2. Upload an audio file.\n\nThree.js implemented effects include:\n1. Bouncing & Colour-Changing Halo\n2. Audio Bars\n\nDemo: https://0necloud.github.io/audio-visualiser/\nSource Code: https://github.com/0necloud/audio-visualiser"
+            "description": "A fun yet painful project I undertook to experiment using Three.js. Integrates the Web Audio API to convert audio into visuals.\n\nAllows users to\n1. Stream audio by sharing their tabs / windows / screens (Desktop only and browser-dependent)\n2. Upload an audio file.\n\nThree.js implemented effects include:\n1. Bouncing & Colour-Changing Halo\n2. STL 3D Halos with textures\n3. Audio Bars\n\nDemo: https://0necloud.github.io/audio-visualiser/\nSource Code: https://github.com/0necloud/audio-visualiser"
         }
     ]
 }
