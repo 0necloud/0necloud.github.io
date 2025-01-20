@@ -29,7 +29,7 @@
                 "Vue.js",
                 "SEO"
             ],
-            "description": "Dungeon Slasher is a mobile game for which I have created a wiki site from scratch for. Through this project, I have gotten first hand experience with purchasing my own domain, setting DNS records, monitor traffic through the Google Search Console and also learn basic SEO techniques to help my site appear more on Search Engines.\n\nI have also created a similar site for a game which has ended service, and will not be maintaining the site any longer: https://revivedwitch.netlify.app/"
+            "description": "A wiki site for the game Dungeon Slasher designed and built from scratch using the VueJS Framework while practising various SEO techniques, including structured data integration with JSON-LD using the Schema.org vocabulary to enhance search engine understanding and improve indexing. Awarded the \"1000 Google Search Impact\" achievement on Google's Search Console for reaching 1000 clicks in 28 days, demonstrating effective organic growth and engagement."
         },
         {
             "title": "Audio Visualiser",
