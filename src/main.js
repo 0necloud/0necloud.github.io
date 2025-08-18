@@ -102,8 +102,6 @@ import TriStateCheckbox from 'primevue/tristatecheckbox';
 import CodeHighlight from './AppCodeHighlight';
 import BlockViewer from './BlockViewer';
 
-// import VueThermometer from "vuejs-thermometer";
-
 router.beforeEach(function(to, from, next) {
     window.scrollTo(0, 0);
     next();
@@ -118,8 +116,6 @@ app.use(ConfirmationService);
 app.use(ToastService);
 app.use(router);
 app.use(store);
-
-// app.use(VueThermometer);
 
 app.directive('tooltip', Tooltip);
 app.directive('ripple', Ripple);
